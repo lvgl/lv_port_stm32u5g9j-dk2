@@ -7,6 +7,7 @@ LV_USE_NEMA_HAL            LV_NEMA_HAL_STM32
 LV_USE_NEMA_VG             1
 LV_NEMA_GFX_MAX_RESX       800
 LV_NEMA_GFX_MAX_RESY       480
+LV_USE_OS                  LV_OS_FREERTOS
 LV_USE_SYSMON              1
 LV_USE_PERF_MONITOR        1
 LV_USE_MEM_MONITOR         1

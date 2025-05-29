@@ -74,6 +74,8 @@ void HAL_MspInit(void)
   __HAL_RCC_PWR_CLK_ENABLE();
 
   /* System interrupt init*/
+  /* PendSV_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(PendSV_IRQn, 15, 0);
 
   /* USER CODE BEGIN MspInit 1 */
 
@@ -206,7 +208,7 @@ void HAL_DMA2D_MspInit(DMA2D_HandleTypeDef* hdma2d)
     /* Peripheral clock enable */
     __HAL_RCC_DMA2D_CLK_ENABLE();
     /* DMA2D interrupt Init */
-    HAL_NVIC_SetPriority(DMA2D_IRQn, 0, 0);
+    HAL_NVIC_SetPriority(DMA2D_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(DMA2D_IRQn);
   /* USER CODE BEGIN DMA2D_MspInit 1 */
 
@@ -257,9 +259,9 @@ void HAL_GPU2D_MspInit(GPU2D_HandleTypeDef* hgpu2d)
     __HAL_RCC_GPU2D_CLK_ENABLE();
     __HAL_RCC_DCACHE2_CLK_ENABLE();
     /* GPU2D interrupt Init */
-    HAL_NVIC_SetPriority(GPU2D_IRQn, 0, 0);
+    HAL_NVIC_SetPriority(GPU2D_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(GPU2D_IRQn);
-    HAL_NVIC_SetPriority(GPU2D_ER_IRQn, 0, 0);
+    HAL_NVIC_SetPriority(GPU2D_ER_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(GPU2D_ER_IRQn);
   /* USER CODE BEGIN GPU2D_MspInit 1 */
 
@@ -363,7 +365,7 @@ void HAL_XSPI_MspInit(XSPI_HandleTypeDef* hxspi)
     HAL_GPIO_Init(GPIOI, &GPIO_InitStruct);
 
     /* HSPI1 interrupt Init */
-    HAL_NVIC_SetPriority(HSPI1_IRQn, 0, 0);
+    HAL_NVIC_SetPriority(HSPI1_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(HSPI1_IRQn);
   /* USER CODE BEGIN HSPI1_MspInit 1 */
 
@@ -728,9 +730,9 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* hltdc)
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
     /* LTDC interrupt Init */
-    HAL_NVIC_SetPriority(LTDC_IRQn, 0, 0);
+    HAL_NVIC_SetPriority(LTDC_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(LTDC_IRQn);
-    HAL_NVIC_SetPriority(LTDC_ER_IRQn, 0, 0);
+    HAL_NVIC_SetPriority(LTDC_ER_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(LTDC_ER_IRQn);
   /* USER CODE BEGIN LTDC_MspInit 1 */
 
