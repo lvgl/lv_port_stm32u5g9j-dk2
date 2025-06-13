@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "Kconfig": "plain text",
+        "defconfig": "plain text",
+        "lv_init.h": "c",
+        "stm32u5xx_hal.h": "c",
+        "stm32u5xx_hal_ltdc.h": "c",
+        "lv_group.h": "c",
+        "freertosconfig.h": "c"
+    }
+}

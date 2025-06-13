@@ -24,23 +24,23 @@ VSYNC, and no OS enabled.
 
 | Name                      | Avg. CPU | Avg. FPS | Avg. time | render time | flush time |
 | :------------------------ | -------: | -------: | --------: | ----------: | ---------: |
-| Empty screen              | 27%      | 29       | 6         | 6           | 0          |
-| Moving wallpaper          | 28%      | 29       | 10        | 10          | 0          |
-| Single rectangle          | 5%       | 29       | 0         | 0           | 0          |
-| Multiple rectangles       | 10%      | 29       | 3         | 3           | 0          |
-| Multiple RGB images       | 12%      | 30       | 3         | 3           | 0          |
-| Multiple ARGB images      | 11%      | 30       | 3         | 3           | 0          |
+| Empty screen              | 24%      | 29       | 5         | 5           | 0          |
+| Moving wallpaper          | 23%      | 29       | 8         | 8           | 0          |
+| Single rectangle          | 3%       | 28       | 0         | 0           | 0          |
+| Multiple rectangles       | 9%       | 29       | 3         | 3           | 0          |
+| Multiple RGB images       | 11%      | 29       | 3         | 3           | 0          |
+| Multiple ARGB images      | 12%      | 29       | 3         | 3           | 0          |
 | Rotated ARGB images       | 8%       | 29       | 2         | 2           | 0          |
-| Multiple labels           | 61%      | 29       | 20        | 17          | 3          |
-| Screen sized text         | 94%      | 20       | 46        | 40          | 6          |
-| Multiple arcs             | 21%      | 29       | 3         | 3           | 0          |
+| Multiple labels           | 52%      | 29       | 16        | 16          | 0          |
+| Screen sized text         | 93%      | 19       | 46        | 38          | 8          |
+| Multiple arcs             | 20%      | 29       | 3         | 3           | 0          |
 | Containers                | 23%      | 29       | 5         | 5           | 0          |
-| Containers with overlay   | 66%      | 29       | 21        | 20          | 1          |
-| Containers with opa       | 29%      | 29       | 7         | 7           | 0          |
-| Containers with opa_layer | 48%      | 29       | 14        | 14          | 0          |
-| Containers with scrolling | 47%      | 29       | 15        | 15          | 0          |
+| Containers with overlay   | 67%      | 29       | 20        | 19          | 1          |
+| Containers with opa       | 28%      | 29       | 7         | 7           | 0          |
+| Containers with opa_layer | 46%      | 29       | 13        | 13          | 0          |
+| Containers with scrolling | 42%      | 29       | 13        | 13          | 0          |
 | Widgets demo              | 91%      | 25       | 20        | 20          | 0          |
-| All scenes avg.           | 36%      | 28       | 10        | 10          | 0          |
+| All scenes avg.           | 34%      | 28       | 9         | 9           | 0          |
 
 ## Specification
 
