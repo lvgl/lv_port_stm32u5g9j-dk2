@@ -18,9 +18,9 @@ Here is a video and measurement results of the benchmark demo running
 in double-buffered direct mode with NemaGFX+NemaVG, LTDC driver with
 VSYNC, and no OS enabled.
 
-<!-- <a href="https://www.youtube.com/watch?v=XXXXXXXXXXXXXXXXXXXXXXX">
-    <img src="https://github.com/user-attachments/assets/87c1f2e5-0260-4772-b711-13fdab467474" width="75%">
-</a> -->
+<a href="https://www.youtube.com/watch?v=8TXbeBs7hy8">
+    <img src="https://github.com/user-attachments/assets/5a410a4a-1270-4606-a0b0-444c8805af88" width="75%">
+</a>
 
 | Name                      | Avg. CPU | Avg. FPS | Avg. time | render time | flush time |
 | :------------------------ | -------: | -------: | --------: | ----------: | ---------: |
