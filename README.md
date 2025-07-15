@@ -15,7 +15,7 @@ You can purchase a STM32U5G9J-DK2 from https://estore.st.com/en/stm32u5g9j-dk2-c
 ## Benchmark
 
 Here is a video and measurement results of the benchmark demo running
-in double-buffered direct mode with NemaGFX+NemaVG, LTDC driver with
+in double-buffered direct mode with NeoChrom, LTDC driver with
 VSYNC, and no OS enabled.
 
 <a href="https://www.youtube.com/watch?v=8TXbeBs7hy8">
