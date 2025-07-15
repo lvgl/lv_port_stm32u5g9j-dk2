@@ -3,7 +3,7 @@
 ## Overview
 
 This STM32U5 series devboard is part of the family of ultra low power ST MCUs.
-It has a large amount of internal memory and the embedded Neo-Chrom GPU
+It has a large amount of internal memory and the embedded NeoChrom GPU
 which accelerates LVGL rendering.
 With such a large internal SRAM, direct double buffering is possible
 at the great speed of internal SRAM.
@@ -48,7 +48,7 @@ VSYNC, and no OS enabled.
 - **MCU:** Arm Cortex-M33 @160MHz
 - **RAM:** 3MB internal
 - **Flash:** 4MB internal, 128MB External
-- **GPU:** Neo-Chrom (GPU2D), Chrom-Art (DMA2D)
+- **GPU:** NeoChrom (GPU2D), ChromArt (DMA2D)
 
 ### Display and Touch
 - **Resolution:** 800x480
