@@ -81,7 +81,7 @@ jobs:
           
           # Download the file and check for the URL
           if curl -s $FILE_URL | grep -Fxq "$REPO_URL_TO_CHECK"; then
-            echo "✅ The repository URL is listed
+            echo "✅ The repository URL is listed"
           else
             echo "❌ The repository URL is NOT"
             exit 1
