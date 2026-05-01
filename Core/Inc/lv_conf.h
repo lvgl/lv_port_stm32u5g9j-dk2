@@ -624,14 +624,13 @@
 /** Define a custom attribute for `lv_display_sync_ready` function */
 #define LV_ATTRIBUTE_SYNC_READY
 
-/** Align memory buffers on this number of bytes.
- *  @note  vglite_src_buf_aligned() uses this value to validate alignment of passed buffer pointers. 
- *  @note  nemagfx requires image buffers to be word-aligned (at least 4 bytes) */
-#define LV_ATTRIBUTE_MEM_ALIGN_SIZE 4
+/** Align VG_LITE buffers on this number of bytes.
+ *  @note  vglite_src_buf_aligned() uses this value to validate alignment of passed buffer pointers. */
+#define LV_ATTRIBUTE_MEM_ALIGN_SIZE 1
 
 /** Will be added where memory needs to be aligned (with -Os data might not be aligned to boundary by default).
  *  E.g. __attribute__((aligned(4)))*/
-#define LV_ATTRIBUTE_MEM_ALIGN __attribute__((aligned(LV_ATTRIBUTE_MEM_ALIGN_SIZE)))
+#define LV_ATTRIBUTE_MEM_ALIGN
 
 /** Attribute to mark large constant arrays, for example for font bitmaps */
 #define LV_ATTRIBUTE_LARGE_CONST
@@ -1046,6 +1045,13 @@
     /** Cache count of glyphs in FreeType, i.e. number of glyphs that can be cached.
      *  The higher the value, the more memory will be used. */
     #define LV_FREETYPE_CACHE_FT_GLYPH_CNT 256
+
+    /** Enable L1 glyph metrics cache for FreeType.
+     *  A per-font, lock-free, 2-way set-associative cache that accelerates
+     *  repeated glyph metric lookups.  Automatically disabled when an OS is
+     *  configured (LV_USE_OS != LV_OS_NONE) because the cache is not
+     *  thread-safe. */
+    #define LV_FREETYPE_CACHE_FT_GLYPH_L1 1
 #endif
 
 /** Built-in TTF decoder */
